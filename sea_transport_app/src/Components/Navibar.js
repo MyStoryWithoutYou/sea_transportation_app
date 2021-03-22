@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 export default function Navibar() {
     return (
@@ -18,6 +18,13 @@ export default function Navibar() {
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
+
+        <Router>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/about" component={About} /> 
+            </Switch>
+        </Router>
     </>
     )
 }
