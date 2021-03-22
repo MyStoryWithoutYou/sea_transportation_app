@@ -6,8 +6,8 @@ import NaviBar from './Components/Navibar';
 import Footer from './Components/Footer';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-import { Home } from './Pages/Home';
-import { About } from './Pages/About';
+//import { Home } from './Pages/Home';
+//import { About } from './Pages/About';
 
 function App() {
   return (
@@ -15,10 +15,6 @@ function App() {
     <Router>
       <NaviBar />
       <Footer />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-      </Switch>
     </Router>
   </>
   );
