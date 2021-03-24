@@ -6,7 +6,7 @@ const SearchBar = () => {
         <div className="searchBar">
             <Form inline>
                 <FormControl type="text" placeholder="Search" />
-                <Button variant="info">Search</Button>
+                <Button className="searchButton" variant="info">Search</Button>
             </Form>
         </div>
     )
