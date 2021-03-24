@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from '../Pages/Home';
 import About from '../Pages/About';
+import Profile from '../Pages/Profile';
 
 const Navibar = () => {
     return(
@@ -14,10 +15,10 @@ const Navibar = () => {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/about">About</Nav.Link>
+                    <Nav.Link href="/about">About us</Nav.Link>
                 </Nav>
                 <Nav>
-                    <Button variant="primary">Profile</Button>
+                    <Button variant="primary" href="/profile">Profile</Button>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
@@ -26,6 +27,7 @@ const Navibar = () => {
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} /> 
+                <Route path="/profile" component={Profile} /> 
             </Switch>
         </Router>
     </>
