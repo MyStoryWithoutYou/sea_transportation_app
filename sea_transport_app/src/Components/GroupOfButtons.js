@@ -4,9 +4,9 @@ import { ButtonGroup, Button} from 'react-bootstrap';
 const GroupOfButtons = () => {
     return(
         <ButtonGroup>
-            <Button variant="secondary">Watch</Button>
-            <Button variant="secondary">Edit</Button>
-            <Button variant="secondary">Delete</Button>
+            <Button className="leftButton" variant="success">Watch</Button>
+            <Button className="midButton" variant="warning">Edit</Button>
+            <Button variant="danger">Delete</Button>
         </ButtonGroup>
     )
 }
