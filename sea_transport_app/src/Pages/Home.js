@@ -1,10 +1,12 @@
 import React from "react";
 
+import OrderTable from '../Components/OrderTable';
+
 const Home = () => {
     return(
-        <div>
-            Home page
-        </div>   
+        <div align="center">
+            <OrderTable/>
+        </div>
     )
 }
 
