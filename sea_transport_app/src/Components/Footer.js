@@ -4,10 +4,10 @@ const Footer = () => {
     return(
         <div className="footer">
             <p>
-                &copy; {new Date().getFullYear()} Sea Transportation App - All Rights Reserved
+                &copy; {new Date().getFullYear()} Effective Transit - All Rights Reserved
             </p>
             <div className="contacts">
-                Contacts
+                Contacts:<br /> +375(33)38-73-960<br /> @info.effectivetransit.com
             </div>
         </div>
     );

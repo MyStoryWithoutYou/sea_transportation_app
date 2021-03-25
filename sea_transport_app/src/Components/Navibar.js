@@ -10,7 +10,7 @@ const Navibar = () => {
     return(
     <>
         <Navbar collapseOnSelect expands="lg" bg="dark" variant="dark">
-            <Navbar.Brand>Sea Transportation Company</Navbar.Brand>
+            <Navbar.Brand>Effective Transit</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">

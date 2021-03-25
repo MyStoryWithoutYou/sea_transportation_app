@@ -15,21 +15,21 @@ const OrderTable = () => {
       <tbody>
         <tr>
           <td>1</td>
-          <td>Order 1</td>
+          <td>Cars, London &rarr; Moscow</td>
           <td>
             <GroupOfButtons />
           </td>
         </tr>
         <tr>
           <td>2</td>
-          <td>Order 2</td>
+          <td>Food, Washington &rarr; Detroit</td>
           <td>
             <GroupOfButtons />
           </td>
         </tr>
         <tr>
           <td>3</td>
-          <td>Order 3</td>
+          <td>Furniture, Paris &rarr; Toronto</td>
           <td>
             <GroupOfButtons />
           </td>
