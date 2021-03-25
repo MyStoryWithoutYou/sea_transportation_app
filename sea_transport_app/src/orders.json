@@ -1,0 +1,25 @@
+{
+    "orders":[
+        {
+            "customer": "Ivan Ivanov",
+            "loading_city": "London",
+            "shipment_city": "Moscow",
+            "date_of_loading": "25.03.2021",
+            "date_of_shipment": "26.03.2021"
+        },
+        {
+            "customer": "Petr Petrov",
+            "loading_city": "Washington",
+            "shipment_city": "Detroit",
+            "date_of_loading": "28.03.2021",
+            "date_of_shipment": "29.03.2021"
+        },
+        {
+            "customer": "Viktor Viktorov",
+            "loading_city": "Paris",
+            "shipment_city": "Toronto",
+            "date_of_loading": "28.03.2021",
+            "date_of_shipment": "29.03.2021"
+        }
+    ] 
+}

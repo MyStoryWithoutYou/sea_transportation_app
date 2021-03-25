@@ -88,9 +88,14 @@
 .searchBar{
   margin-left:40%;
   margin-bottom:20px;
-  margin-top:20px
+  margin-top:20px;
 }
 
 .searchButton{
   margin-left:7px;
+}
+
+.paginationBar{
+  margin-left:40%;
+  margin-top:20px;
 }
