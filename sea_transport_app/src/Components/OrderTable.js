@@ -1,5 +1,6 @@
 import React from 'react';
 
+import getAllOrders, { name } from '../api/orders';
 import GroupOfButtons from '../Components/GroupOfButtons';
 
 const OrderTable = () => {
