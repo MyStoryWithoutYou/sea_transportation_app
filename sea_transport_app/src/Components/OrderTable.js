@@ -6,6 +6,12 @@ import GroupOfButtons from '../Components/GroupOfButtons';
 let orders = [];
 
 class OrderTable extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      orders: [],
+    };
+  }
   componentDidMount() {
     getAllOrders().then(function(data) {
       orders = data.orders;
@@ -26,7 +32,7 @@ class OrderTable extends React.Component {
 
         <tr>
           <td>1</td>
-          <td>{ orders[0].product }</td>
+          <td>{ orders[1].product }</td>
           <td>
             <GroupOfButtons />
           </td>
