@@ -1,9 +1,7 @@
 import axios from 'axios';
 
-
-
 function getAllOrders(){
-    return axios.get('https://my-json-server.typicode.com/typicode/demo/posts')
+    return axios.get('https://my-json-server.typicode.com/MyStoryWithoutYou/webDatabase')
     .then(function (response) {
         return(response.data);
     })

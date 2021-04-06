@@ -3,20 +3,30 @@ import React from 'react';
 import getAllOrders, { name } from '../api/orders';
 import GroupOfButtons from '../Components/GroupOfButtons';
 
-const OrderTable = () => {
-  return(
-    <table align="center" className="orders">
+let orders = [];
+
+class OrderTable extends React.Component {
+  componentDidMount() {
+    getAllOrders().then(function(data) {
+      orders = data.orders;
+  })
+  }
+
+  render(){
+    return(
+      <table align="center" className="orders"> 
       <thead>
         <tr>
           <th>id</th>
-          <th>Order Name</th>
+          <th>Orders</th>
           <th>Actions</th>
         </tr>
       </thead>
       <tbody>
+
         <tr>
           <td>1</td>
-          <td>Cars, London &rarr; Moscow</td>
+          <td>{ orders[0].product }</td>
           <td>
             <GroupOfButtons />
           </td>
@@ -37,7 +47,8 @@ const OrderTable = () => {
         </tr>
       </tbody>
     </table>
-  )
+    )
+  }
 }
 
 export default OrderTable;
