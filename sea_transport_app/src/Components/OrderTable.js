@@ -3,8 +3,6 @@ import React from 'react';
 import getAllOrders, { name } from '../api/orders';
 import GroupOfButtons from '../Components/GroupOfButtons';
 
-let orders = [];
-
 class OrderTable extends React.Component {
   constructor(props){
     super(props);
@@ -13,10 +11,12 @@ class OrderTable extends React.Component {
     };
   }
   componentDidMount() {
-    getAllOrders().then(function(data) {
-      orders = data.orders;
+    getAllOrders().then((data) => {
+      debugger;
+      this.setState.orders = data;
+      debugger;
   })
-  }
+}
 
   render(){
     return(
@@ -29,10 +29,10 @@ class OrderTable extends React.Component {
         </tr>
       </thead>
       <tbody>
-
+        
         <tr>
           <td>1</td>
-          <td>{ orders[1].product }</td>
+          <td>this.orders[0].product</td>
           <td>
             <GroupOfButtons />
           </td>
