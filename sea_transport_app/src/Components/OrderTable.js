@@ -10,10 +10,13 @@ class OrderTable extends React.Component {
       orders: [],
     };
   }
+  
   componentDidMount() {
     getAllOrders().then((data) => {
       debugger;
-      this.setState.orders = data;
+      this.setState({
+        orders: data,
+      });
       debugger;
   })
 }
@@ -32,7 +35,7 @@ class OrderTable extends React.Component {
         
         <tr>
           <td>1</td>
-          <td>this.orders[0].product</td>
+          <td>{this.state.orders[0]?.product}</td>
           <td>
             <GroupOfButtons />
           </td>
