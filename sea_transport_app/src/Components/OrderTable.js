@@ -10,7 +10,7 @@ class OrderTable extends React.Component {
       orders: [],
     };
   }
-  
+
   componentDidMount() {
     getAllOrders().then((data) => {
       debugger;
@@ -19,6 +19,18 @@ class OrderTable extends React.Component {
       });
       debugger;
   })
+
+  
+}
+ renderOrder(order, index) {
+  return(
+    <tr key={index}>
+      <td>{index + 1}</td>
+      <td><strong>{order.product + "; "}</strong>
+      {order.loading_city + " -> " + order.shipment_city}</td>
+      <td><GroupOfButtons /></td>
+    </tr>  
+  )
 }
 
   render(){
@@ -32,28 +44,7 @@ class OrderTable extends React.Component {
         </tr>
       </thead>
       <tbody>
-        
-        <tr>
-          <td>1</td>
-          <td>{this.state.orders[0]?.product}</td>
-          <td>
-            <GroupOfButtons />
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Food, Washington &rarr; Detroit</td>
-          <td>
-            <GroupOfButtons />
-          </td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Furniture, Paris &rarr; Toronto</td>
-          <td>
-            <GroupOfButtons />
-          </td>
-        </tr>
+        {this.state.orders.map(this.renderOrder)}
       </tbody>
     </table>
     )
