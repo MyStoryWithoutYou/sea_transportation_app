@@ -1,0 +1,25 @@
+{
+  "fields": [
+    {
+      "fieldName": "subject",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "loading_city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shipment_city",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "service": "serviceClass",
+  "dto": "no",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "pagination",
+  "entityTableName": "jhi_order",
+  "name": "Order",
+  "changelogDate": "20210423094200"
+}
