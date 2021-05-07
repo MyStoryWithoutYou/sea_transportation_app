@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 function getAllOrders(){
-    return axios.get('http://localhost:9000/testAPI')
+    return axios.get('http://localhost:8080')
     .then(function (response) {
         return(response.data);
     })

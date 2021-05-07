@@ -26,7 +26,7 @@ class OrderTable extends React.Component {
   return(
     <tr key={index}>
       <td>{index + 1}</td>
-      <td><strong>{order.product + "; "}</strong>
+      <td><strong>{order.cargo + "; "}</strong>
       {order.loading_city + " -> " + order.shipment_city}</td>
       <td><GroupOfButtons /></td>
     </tr>  
