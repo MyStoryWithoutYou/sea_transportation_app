@@ -13,19 +13,17 @@ class OrderTable extends React.Component {
 
   componentDidMount() {
     getAllOrders().then((data) => {
-      debugger;
       this.setState({
         orders: data,
       });
-      debugger;
   })
 
   
 }
- renderOrder(order, index) {
+ renderOrder(order) {
   return(
-    <tr key={index}>
-      <td>{index + 1}</td>
+    <tr key={order.id}>
+      <td>{order.id + 1}</td>
       <td><strong>{order.cargo + "; "}</strong>
       {order.loading_city + " -> " + order.shipment_city}</td>
       <td><GroupOfButtons /></td>
