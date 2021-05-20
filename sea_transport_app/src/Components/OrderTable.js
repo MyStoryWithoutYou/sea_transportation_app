@@ -42,7 +42,7 @@ class OrderTable extends React.Component {
         </tr>
       </thead>
       <tbody>
-        {this.state.orders.map(this.renderOrder)}
+        {this.state.orders?.map(this.renderOrder)}
       </tbody>
     </table>
     )
